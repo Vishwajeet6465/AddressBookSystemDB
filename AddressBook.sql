@@ -37,3 +37,5 @@ SELECT * FROM AddressBookSystem;
 SELECT * FROM AddressBookSystem WHERE address = "chinchwad";
 
 SELECT city, state, COUNT(*) AS count FROM 	AddressBookSystem GROUP BY city, state;
+
+SELECT firstname, lastname, city FROM AddressBookSystem WHERE city = "Pune" ORDER BY firstname;
