@@ -47,3 +47,11 @@ UPDATE AddressBookSystem SET bookname = "Family" WHERE firstname = 'Gauri' OR fi
 UPDATE AddressBookSystem SET bookname = "Friends" WHERE firstname = 'pallavi' OR firstName = 'Anuja';
 
 SELECT * FROM AddressBookSystem;
+
+SELECT booktype, count(*) AS contacts_count FROM AddressBookSystem GROUP BY booktype;
+
+INSERT INTO AddressBookSystem(booktype,bookname,firstname,lastname,address,city,state,zip,phoneNo,email) VALUES
+("Professional", "Professional Book", "Muskan", "Hannure", "Chinchwad", "Pune", "Maharastra", "234556", "1243568709", "muskan@gmail.com"),
+("Family", "Family Book", "Rutuja", "Ajesht", "Jath", "Sangali", "Maharastra", "416404", "7635465492", "rutuja@gmail.com");
+
+SELECT * FROM AddressBookSystem;
