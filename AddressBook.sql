@@ -25,3 +25,7 @@ VALUES ("Vishwajeet", "Bamane", "Talegaon","Pune", "Maharastra", "410507", "7777
        ("pallavi", "chikhale", "Talegaon","Pune", "Maharastra", "410507", "484533624", "pallavi@gmail.com");
 
 SELECT * FROM AddressBookSystem;
+
+SET SQL_SAFE_UPDATES = 0;
+UPDATE AddressBookSystem SET address = "Punavle", city = "Pune", state = "Maharastra", zip = "411342" WHERE firstname = "pallavi" AND lastname = "chikhale";
+SET SQL_SAFE_UPDATES = 1;
