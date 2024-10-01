@@ -39,3 +39,11 @@ SELECT * FROM AddressBookSystem WHERE address = "chinchwad";
 SELECT city, state, COUNT(*) AS count FROM 	AddressBookSystem GROUP BY city, state;
 
 SELECT firstname, lastname, city FROM AddressBookSystem WHERE city = "Pune" ORDER BY firstname;
+
+ALTER TABLE AddressBookSystem ADD COLUMN bookname VARCHAR(50) AFTER id,ADD COLUMN booktype VARCHAR(50) AFTER bookname;
+
+UPDATE AddressBookSystem SET bookname = "Professional" WHERE firstname = 'Vishwajeet';
+UPDATE AddressBookSystem SET bookname = "Family" WHERE firstname = 'Gauri' OR firstName = 'Saurabh';
+UPDATE AddressBookSystem SET bookname = "Friends" WHERE firstname = 'pallavi' OR firstName = 'Anuja';
+
+SELECT * FROM AddressBookSystem;
