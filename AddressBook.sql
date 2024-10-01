@@ -34,3 +34,4 @@ SET SQL_SAFE_UPDATES = 1;
 
 SELECT * FROM AddressBookSystem;
 
+SELECT * FROM AddressBookSystem WHERE address = "chinchwad";
