@@ -15,3 +15,13 @@ email VARCHAR(100)
 );
 
 describe AddressBookSystem;
+
+INSERT INTO AddressBookSystem (firstname, lastname, address, city, state, zip, phoneNo, email)
+VALUES ("Vishwajeet", "Bamane", "Talegaon","Pune", "Maharastra", "410507", "77777777", "vishwajeet@gmail.com"),
+	   ("Gauri", "Mahajan", "chinchwad","Pune", "Maharastra", "411307", "6825565237", "gauri@gmail.com"),
+       ("Saurabh", "Aherwadkar", "Talegaon","Pune", "Maharastra", "410507", "882485432", "saurabh@gmail.com"),
+       ("tararani", "Bangar", "Talegaon","Pune", "Maharastra", "410507", "584556589", "tara@gmail.com"),
+       ("Anuja", "Shinde", "Karad","Satara", "Maharastra", "415110", "6823549823", "anuja@gmail.com"),
+       ("pallavi", "chikhale", "Talegaon","Pune", "Maharastra", "410507", "484533624", "pallavi@gmail.com");
+
+SELECT * FROM AddressBookSystem;
